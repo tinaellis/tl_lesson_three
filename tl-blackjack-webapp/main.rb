@@ -9,5 +9,5 @@ use Rack::Session::Cookie, :key => 'rack.session',
 
 
 get '/' do
-  "Hello World"
+  "Good morning World!"
 end
