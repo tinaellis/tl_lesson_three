@@ -14,7 +14,8 @@ Headers and Status Code
 Create a session ID session[:username] = session["bob"]
 
 # Why is it important for us, as web developers, to understand that HTTP is a "stateless" protocol?
-To understand that changes in state must occur at the views model
+To understand that changes in state must occur at the views model and to understand
+the tricks we must employ to simulate a stateful experience for our users.
 
 # If the internet is just HTTP requests/responses, why do we only use browsers to interface with web applications? Are there any other options?
 Easy interface for users, not everyone is a developer
