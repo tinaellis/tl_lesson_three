@@ -2,12 +2,21 @@
 
 # What is HTML? What is CSS? What is Javascript?
 Front End languages
+HTML - markup
+CSS - manipulates look and feel of html elements. Traverses up the DOMS
+JS - manipulates look and actions of html elements
+(jquery takes care of browser issues)
+
+#backend..
+Node JS - server side JS stack
 
 # What are the major parts of an HTTP request?
-Get / Post
+Method / URL / Parameters
+(post or get), (url), (parameters)
 
 # What are the major parts of an HTTP response?
-Headers and Status Code
+Status Code and Pay Load
+(* parcing the request and issuing a response is what web developers do)
 
 # How do you submit an HTTP POST request, with a "username" attribute set to "bob"?
 # What if we wanted a GET request instead?
@@ -25,19 +34,40 @@ Model view controller coordinates data updates with the user and model.
 
 # The below questions are about Sinatra:
 # At a high level, how are requests processed?
-GET requests
+Through post requests and rendering a layout
 
 # In the controller/action, what's the difference between rendering and redirecting?
 Rendering renders the page layout within the current view (erb: render_page)
+* Return a status code of 200 and display this template
+
 Redirecting completely redirects the user to the page itself (redirect '/new_page')
+* Issues a new request to another URL, process again, pg will require render or redirect.
+Eventually youll have to render something.
 
 # In the ERB view template, how do you show dynamic content?
-Through the use of ruby variables and methods
+# <% %>
+# <%= %> - renders on page
+Instance variable, helper method or a session.
 
 # Given what you know about ERB templates, when do you suppose the ERB template is turned into HTML?
 Render -> views
+erb renders html..
+(slim, haml - say theyre faster)
 
 # What's the role of instance variables in Sinatra?
-Same as ruby
+Set up some kind of variable that we can use in the view template.
 
-# Solutions are in the first lecture video of lesson 4.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
